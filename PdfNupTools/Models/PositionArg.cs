@@ -10,7 +10,7 @@ namespace PdfNup.PdfNupTools.Models
     {
         public PositionArg(string text)
         {
-            var match = Regex.Match(text, "(?<x>\\d+(\\.\\d+)?),(?<y>\\d+(\\.\\d+)?)");
+            var match = Regex.Match(text, "(?<x>\\-?\\d+(\\.\\d+)?),(?<y>\\-?\\d+(\\.\\d+)?)");
             if (match.Success == false)
             {
                 throw new Exception($"Invalid position: {text}");
