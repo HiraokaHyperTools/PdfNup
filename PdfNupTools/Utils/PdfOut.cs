@@ -8,7 +8,7 @@ using System.Text;
 
 namespace PdfNup.PdfNupTools.Utils
 {
-    class PdfOut : IDisposable
+    public class PdfOut : IDisposable
     {
         public PdfWriter writer;
         public Document document;

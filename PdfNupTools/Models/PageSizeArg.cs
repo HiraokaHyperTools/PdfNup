@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace PdfNup.PdfNupTools.Models
 {
-    class PageSizeArg
+    public class PageSizeArg
     {
         public PageSizeArg(string text)
         {

@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace PdfNup.PdfNupTools.Models
 {
-    class PositionArg
+    public class PositionArg
     {
         public PositionArg(string text)
         {

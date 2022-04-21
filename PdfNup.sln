@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 15 for Windows Desktop
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfNup", "PdfNup.csproj", "{FF9EDD08-2011-45DA-982D-0206A14A708F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfNupTests", "PdfNupTests\PdfNupTests.csproj", "{AD9202CB-99C1-4F13-881D-34237F9D4552}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FF9EDD08-2011-45DA-982D-0206A14A708F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF9EDD08-2011-45DA-982D-0206A14A708F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF9EDD08-2011-45DA-982D-0206A14A708F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD9202CB-99C1-4F13-881D-34237F9D4552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9202CB-99C1-4F13-881D-34237F9D4552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9202CB-99C1-4F13-881D-34237F9D4552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9202CB-99C1-4F13-881D-34237F9D4552}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

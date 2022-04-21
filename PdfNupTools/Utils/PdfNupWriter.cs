@@ -8,7 +8,7 @@ using System.Text;
 
 namespace PdfNup.PdfNupTools.Utils
 {
-    class PdfNupWriter : IDisposable
+    public class PdfNupWriter : IDisposable
     {
         private PdfOut pdfOut;
         private readonly PageSizeArg pageSize;
@@ -107,7 +107,7 @@ namespace PdfNup.PdfNupTools.Utils
 
         public void Add(PdfIn pdfIn)
         {
-            for (int y = 1; y <= pdfIn.reader.NumberOfPages; y++)
+            foreach (var y in PageNumLister.From(pdfIn))
             {
                 parts.Add(new Part { pdfIn = pdfIn, y = y, });
                 if (parts.Count == posList.Count)

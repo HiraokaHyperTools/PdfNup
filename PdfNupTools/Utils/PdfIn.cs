@@ -1,4 +1,5 @@
 ﻿using iTextSharp.text.pdf;
+using PdfNup.PdfNupTools.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,14 +8,17 @@ using System.Text;
 
 namespace PdfNup.PdfNupTools.Utils
 {
-    class PdfIn : IDisposable
+    public class PdfIn : IDisposable
     {
-        public PdfReader reader;
+        public readonly PdfReader reader;
+        public readonly PageRangesSpecifier pageSpec;
 
-        public PdfIn(Stream inStream)
+        public PdfIn(Stream inStream, PageRangesSpecifier pageSpec)
         {
             reader = new PdfReader(inStream);
             reader.ConsolidateNamedDestinations();
+
+            this.pageSpec = pageSpec;
         }
 
         public void Dispose()

@@ -45,8 +45,10 @@ namespace PdfNup
                 {
                     for (; x < args.Length; x++)
                     {
-                        var inStream = File.OpenRead(args[x]);
-                        var pdfIn = new PdfIn(inStream);
+                        var set = new FileAndQueries(args[x]);
+                        var inStream = File.OpenRead(set.path);
+                        set.queries.TryGetValue("page", out string pageSpec);
+                        var pdfIn = new PdfIn(inStream, new PageRangesSpecifier(pageSpec));
 
                         pdfNupWriter.Add(pdfIn);
                     }

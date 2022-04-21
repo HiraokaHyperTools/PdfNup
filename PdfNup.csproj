@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PdfNupTools\Models\FileAndQueries.cs" />
+    <Compile Include="PdfNupTools\Models\PageRangesSpecifier.cs" />
     <Compile Include="PdfNupTools\Models\PageSizeArg.cs" />
     <Compile Include="PdfNupTools\Models\PositionArg.cs" />
+    <Compile Include="PdfNupTools\Utils\PageNumLister.cs" />
     <Compile Include="PdfNupTools\Utils\PdfIn.cs" />
     <Compile Include="PdfNupTools\Utils\PdfNupWriter.cs" />
     <Compile Include="PdfNupTools\Utils\PdfOut.cs" />
