@@ -10,8 +10,8 @@
 Unicode true
 
 !define APP "PdfNup"
-!system 'DefineAsmVer.exe "bin\DEBUG\${APP}.exe" "!define VER ""[SVER]"" " > Tmpver.nsh'
-!include "Tmpver.nsh"
+!system 'DefineAsmVer.exe "bin\DEBUG\${APP}.exe" "!define VER ""[FVER]"" " > Appver.tmp'
+!include "Appver.tmp"
 
 !system 'MySign "bin\DEBUG\${APP}.exe"'
 !finalize 'MySign "%1"'
